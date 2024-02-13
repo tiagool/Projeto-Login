@@ -23,16 +23,17 @@ main{
 }
 section#login{
     display: block;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-   transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    margin: 0px;
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
@@ -47,40 +48,45 @@ section#login >div#formulario{
     display: block;
     padding: 10px;
 }
-div.campo>label{
-    display: none;
-}
-
-div.campo> i{
-    width: 20px;
-    padding: 5px;
-    font-size: 2em;
-    color: white;
-   
-}
 
 
 div#formulario{
     text-align: center;
-    margin-bottom: 10px;
-   
+    margin-bottom: 10px; 
 }
 div#formulario >p{
     font-size: 0.8em;
 }
+div.campo>label{
+    display: none;
+
+}
+
+div.campo> i{
+    width: 15px;
+    padding: 3px;
+    font-size: 2em;
+    color: white;
+    border: 0px;
+    margin: 0px;
+   
+}
+
+
 form>div.campo{
     background-color: #5f2c82;
     width: 100%;
-    display: block;
+    border: 0px;
     height: 40px;
     border-radius: 7px;
-    margin: 5px ;
+    margin: 4px ;
+    
     
     
 
 }
 div.campo > input{
-   width: 100%;
+    width: 188px;
     height: 100%;
     font-size: 1em;
     background-color: #a3e2e0;
@@ -96,6 +102,7 @@ div.campo> input:focus-within{
     background-color: white;
 }
 form > input[type=submit] {
+    
     display: block;
     font-size: 1em;
     width: 100% ;
@@ -123,7 +130,7 @@ form > a.botao{
     padding-left: 45px;
     padding-top: 5px;
     margin-top: 5px;
-    border-radius: 7px;
+    border-radius: 5px;
     border: 1px #81e4e0 solid ;
 
     
@@ -142,4 +149,22 @@ float: right;
 padding-right:30px;
 padding-top: 5px;
 text-align: center;
+}
+input#isenha{
+    text-align: center;
+    border: 1px solid #5f2c82;
+    width: 188px;
+    height:35px;
+    padding-bottom: 10px;
+   padding-top: 7px;
+  
+}
+
+input#ilogin{
+    text-align: center;
+    border: 1px solid #5f2c82;
+    height:35px;
+    padding-top: 1px;
+    
+  
 }
